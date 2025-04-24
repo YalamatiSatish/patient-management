@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+// generated files based on our proto file will go into events
+package patient.events;
+option java_multiple_files = true;
+
+// event or message
+message PatientEvent {
+  string patientId = 1;
+  string name = 2;
+  string email = 3;
+  string event_type = 4;
+}
